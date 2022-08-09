@@ -1,0 +1,222 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-Height: 1.5;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.button_1{
+    height:38px;
+    background: grey;
+    border: none;
+    padding-left: 20px;
+    padding-right:20px;
+    color:rgb(0, 255, 34);
+    letter-spacing: 1 px;
+}
+
+header {
+    background: rgb(10, 4, 37);
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: orange 3px solid;
+}
+
+header a {
+    color: white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size: 13px; 
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: orangered;
+    font-weight: bold;
+}
+
+header .highlight{
+    font-style:italic;
+    text-shadow: 0px -32px 30px greenyellow
+}
+
+header .current a{
+    color: orangered;
+    text-decoration: underline;
+    font-weight: bold;    
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase{
+    min-height: 400px;
+    background: url('../img/show2.jpg') no-repeat 00px -190px;
+    text-align: center;
+    color: white;
+    background-size:cover;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    color: darkorange;
+    font-size: 40px;
+    margin-bottom: 10px
+}
+
+#showcase p{
+    font-size: 20px; 
+    color: whitesmoke;
+    font-weight:bolder
+}
+
+#newsletter{
+    padding: 15px;
+    color:white;
+    background: rgb(10, 4, 37) ;
+}
+
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 35px;
+    width: 250px;
+}
+
+#boxes{
+    margin-top: 50px;
+
+}
+
+#boxes .box {
+   float:left;
+   width: 30%;
+   padding:15px;
+   text-align: center;              
+}
+
+#boxes .box img{
+    min-width: 300px;
+    max-height: 150px;
+
+}
+
+footer {
+    color: white;
+    background-color:rgb(218, 75, 23);
+    padding: 20px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+aside#sidebar{
+    float:right;
+    width: 30%;
+    margin-top:10px;
+}
+
+article#main-col{
+    float:left;
+    width:65%;
+}
+
+.dark{
+    padding:15px;
+    background: rgb(99, 99, 88);
+    color: darkgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul#services li{
+    list-style: none;/*this gets rid of bullet points */
+    padding: 20px;
+    border:rgb(99, 99, 88);
+    margin-bottom: 5px;
+    background:rgb(201, 158, 94);
+    color: white;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+aside#sidebar .quote textarea {
+    min-height: 60px
+}
+
+@media (max-width: 768px){
+        header #branding,
+        header nav,
+        header nav li ,
+        #newsletter h1,
+        #newsletter form,
+        #boxes .box,
+        article#main-col,
+        aside#sidebar{
+            float:none;
+            text-align: center;
+            width: 100%
+        }
+        header{
+            padding-bottom:20px;
+
+        }
+        #showcase h1{
+            margin-top:40px;
+        }
+        #newsletter button, .quote button{
+            display:block;
+            width:100%;
+        }
+        #newsletter form input[type="email"] .quote input, .quote textarea{
+            margin-bottom:5px;
+            width:100%;
+        }
+        .quote label{
+            float:left;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+}
