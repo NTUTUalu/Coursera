@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" >
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>University Website</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imG/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()""></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+
+<!------- course ------->
+
+<section class="course">
+
+    <h1> Courses We Offer</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduate</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+    </div>
+</section>
+
+<!------- facilities ------->
+
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet</p>
+
+    <di class="row">
+        <div class="facilities-col">
+            <img src="../img/library.png">
+            <h3>World Class Library</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="facilities-col">
+            <img src="../img/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="facilities-col">
+            <img src="../img/cafeteria.png">
+            <h3>Tasty And Healthy Food</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!----- Footer ----->
+<section class="footer">
+    <h4>About us</h4>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  Lorem ipsum dolor sit amet. Lorem ipsum  <br> dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+    </div>
+    <p>Made by PM pictures Republic of South Africa</p>
+
+
+</section>
+
+
+
+
+<!-- ----Javascript for Toggle Menu------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        
+        function hideMenu() {
+            navLinks.style.right ="-50%";
+        }
+
+        function showMenu() {
+            navLinks.style.right ="0";
+        }
+
+
+
+    </script>
+</body>
+</html>
