@@ -1,0 +1,59 @@
+body {
+    background: url('../img/nature.jpg') no-repeat;
+    background-size: cover;
+    font-family: Arial; 
+    height: 100vh;
+    color:whitesmoke
+}
+.new{
+    width: 100%;
+        background-color:limegreen;
+   
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: green;
+
+
+}
+
+ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color:black;
+    opacity:0.8;
+    line-height: 40px;
+    text-align:left;
+    font-size: 20px;
+    
+    margin-right: 2px;
+    
+
+}
+
+ul li ul li{
+    background-color: limegreen;
+    opacity: 0.6;
+    color:black;
+    display:none;
+    
+
+}
+
+ul li a{
+    display:block;
+    text-decoration: none;
+    padding-left: 7px;
+}
+
+ul li a:hover{
+    color: white;
+    background-color: blue;
+}
+
+ul li:hover ul li {
+    display: block;
+}
