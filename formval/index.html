@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function validate( ) {
+            var username = document.getElementById("name");
+            var password = document.getElementById("pass");
+
+            if (username.value.trim() == '' || password.value.trim() =='') {
+                alert('One of the fields is not filled');
+                return false ;
+            }   else {
+                return true
+            }
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="message.html"> 
+        <!-- this part of the code will redirect you to message.html upon form submit -->
+        <input id="name" placeholder="Username" type="text"><br/><br/>
+
+        <input id="pass" placeholder="password" type="password">
+
+        <br/><br/>
+        <button  type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
