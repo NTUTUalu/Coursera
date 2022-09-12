@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function validate( ) {
+            var username = document.getElementById("name");
+            var password = document.getElementById("pass");
+
+            if (username.value.trim() == '') {
+                alert('Name is blank');
+                username.style.border = "solid 3px red";
+                document.getElementById("notifier").style.visibility="visible"
+                return false ;
+            }   else if (password.value.trim() == '') {
+                alert('Password is blank');
+                password.style.border = "solid 3px red";
+                return false
+            } else if (password.value.trim().length< 8 ) {
+                alert('Password is too short');
+                password.style.border = "solid 3px orange";
+                return false
+            }else {
+                return true
+            }
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="message.html"> 
+        <!-- this part of the code will redirect you to message.html upon form submit -->
+        <input id="name" placeholder="Username" type="text">
+        <label id="notifier" style="color:red; visibility:hidden">Invalid</label> <br/><br/>
+
+        <input id="pass" placeholder="password" type="password">
+
+        <br/><br/>
+        <button  type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
